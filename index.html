@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="name">My Portfolio</div>
+          <div class="burger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <ul class="nav-items">
+              <li class="li"><a href="#home">Home </a> <i class="fa-solid fa-xmark burger" onclick="toggleMenu()"></i> </li>
+              <li class="li"><a href="#about">About</a></li>
+              <li class="li"><a href="#service">Services</a></li>
+              <li class="li"><a href="#skills">Skills</a></li>
+              <li class="li"><a href="#project">Projects</a></li>
+              <li class="li"><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+    <main>
+      <!-- Home Section -->
+      <section id="home">
+        <div class="header-text">
+          <p id="text-effect">Web Developer</p>
+          <h2>
+            Hi, I'm <span>Bhagwan Golhar</span> <br />
+            from India
+          </h2>
+        </div>
+        <div class="link">
+          <a href="/Portfolio/Assets/resume/MY_RESUME.pdf" target="_blank" class="resume">Download Resume <i class="fa-solid fa-download"></i></a>
+          <a href="#contact" class="contact">Contact</a>
+        </div>
+      </section>      
+      <!-- About Section -->
+      <section id="about">
+        <div class="col-1">
+          <h1>About Me</h1>
+          <p class="p1">
+            Hi, I'm Bhagwan Golhar, a dedicated Web Developer with a passion for creating innovative and user-friendly web solutions. I am currently 20 years old and pursuing my Bachelor of Computer Applications (BCA) from Deogiri College, specializing in Computer Science and Animation. My background blends technical expertise with creative design, allowing me to build websites that are both visually engaging and functionally robust.
+          </p>
+          <p class="p2">
+            I, passionate and dedicated developer with a
+            strong foundation in programming and web development.I am committed to delivering
+            high-quality solutions by leveraging my expertise in modern
+            development practices and tools.
+          </p>
+          <p class="p4">Driven by curiosity and a love for technology, I am constantly learning and evolving to stay ahead in the dynamic world of web development. Whether it’s designing seamless user experiences or coding efficient backend systems, I am committed to delivering excellence in every project. Let’s collaborate and bring your ideas to life!
+          </p>
+        </div>
+        <div class="col-2">
+          <div class="img">
+            <img src="/Portfolio/Assets/images/about-img2.png" alt="About Me" />
+          </div>
+        </div>
+      </section>      
+      <!-- Education Section -->
+      <section id="education">
+        <h2>QUALIFICATION</h2>
+        <div class="education-box">
+          <div class="education-item1">
+            <h4>BCA in Computer Science and Engineering</h4>
+            <p>From: Dr. Babasaheb Ambedkar MarathWada University</p>
+            <p></p>
+            <p>CGPA: 8.5/10</p>
+            <p>2025 - Currently</p>
+          </div>
+          <div class="education-item2">
+            <h4>HSC</h4>
+            <p>
+              From : Chhatrapati Shivaji Kanishtha Mahavidhyalay Ankushnagar</p>
+            <p>2023 - Completed</p>
+          </div>
+          <div class="education-item3">
+            <h4>SSC</h4>
+            <p>From : Chhatrapati Shivaji Highschool Ankushnagar</p>
+            <p>2021 - Completed</p>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section id="service">
+        <h2>SERVICES</h2>
+        <div class="service-box">
+          <!-- Web Development Card -->
+          <div class="s">
+            <div class="icon">
+              <i class="fa fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>We provide end-to-end web development services, blending creativity with cutting-edge technologies to deliver responsive, functional, and visually stunning websites.</p>
+          </div>
+    
+          <!-- Front-End Development Card -->
+          <div class="s">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Front-End Development</h3>
+            <p>We craft interactive, user-friendly interfaces using HTML, CSS, JavaScript, and frameworks like React, ensuring an exceptional experience across devices.</p>
+          </div>
+    
+          <!-- Back-End Development Card -->
+          <div class="s">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Back-End Development</h3>
+            <p>Building robust and scalable server-side solutions with efficient databases, APIs, and secure backends for seamless performance.</p>
+          </div>
+    
+          <!-- Java Development Card -->
+          <div class="s">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Java Development</h3>
+            <p>Using frameworks like Spring and Hibernate, we deliver scalable Java solutions for enterprise applications, web services, and Android development.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Skill Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-buttons">
+          <button class="skill-btn" data-filter="all">All Skills</button>
+          <button class="skill-btn" data-filter="frontend">Frontend</button>
+          <button class="skill-btn" data-filter="backend">Backend</button>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item all">
+            <h4>C</h4>
+            <p> Proficient in C programming language.</p>
+          </div>
+          <div class="skill-item all">
+            <h4>C++</h4>
+            <p> Expert</p>
+          </div>
+          <div class="skill-item frontend">
+            <h4>HTML & CSS</h4>
+            <p>Building the structure and design of websites.</p>
+          </div>
+          <div class="skill-item frontend">
+            <h4>JavaScript</h4>
+            <p>Building interactive and dynamic websites.</p>
+          </div>
+          <div class="skill-item frontend">
+            <h4>React</h4>
+            <p>Building modern web applications with React.</p>
+          </div>
+          <div class="skill-item backend">
+            <h4>Node.js</h4>
+            <p>Building scalable server-side applications.</p>
+          </div>
+          <div class="skill-item backend">
+            <h4>SQL</h4>
+            <p> Managing and querying databases.</p>
+          </div>
+          <div class="skill-item backend">
+            <h4>MongoDB</h4>
+            <p>NoSQL database for storing web data.</p>
+          </div>
+          <div class="skill-item backend">
+            <h4>Express</h4>
+            <p>Building REST APIs with Express.</p>
+          </div>
+          <div class="skill-item all">
+            <h4>Git</h4>
+            <p>Version control for managing code repositories.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Project Section -->
+      <section id="project">
+        <h2>PROJECTS</h2>
+        <div class="project-box">
+          <div class="p p1">
+            <h3>TODO LIST</h3>
+            <p>ToDo List using <br /><span>HTML</span>,<span>CSS</span>,<span>JS</span></p>
+            <a href="" target="_blank">see here</a>
+          </div>
+          <div class="p p2">
+            <h3>CALCULATOR</h3>
+            <p>Calculator using <br /><span>HTML</span>,<span>CSS</span>,<span>JS</span></p>
+            <a href="" target="_blank">see here</a>
+          </div>
+          <div class="p p3">
+            <h3>IT SERVICE WEBSITE</h3>
+            <p> Portfolio using <br /><span>HTML</span>,<span>CSS</span>,<span>JS</span></p>
+            <a href="https://bhagwan6629.github.io/IT-Services-webpage/" target="_blank">see here</a>
+          </div>
+          <div class="p p4">
+            <h3>ZERODHA APP</h3>
+            <p>Zerodha app using <br /><span>HTML</span>,<span>CSS</span>,<span>JS</span></p>
+            <a href="" target="_blank">see here</a>
+          </div>
+        </div>
+      </section>
+      <section id="achievement">
+        <h2>ACHIEVEMENTS &amp; CERTIFICATIONS</h2>
+        <div class="achieve-box">
+          <div class="achieve achieve-1">
+            <img src="/Portfolio/Assets/images/full-Stack Certificate.png" alt="">
+            <h3>Full-Stack Development</h3>
+            <a href="/Portfolio/Assets/images/full-Stack Certificate.png" target="_blank">view</a>
+          </div>
+          <div class="achieve achieve-2">
+            <img src="/Portfolio/Assets/images/Java-certificate.png" alt="">
+            <h3>Java</h3>
+            <a href="/Portfolio/Assets/images/Java-certificate.png" target="_blank" >view</a>
+          </div>
+          <div class="achieve achieve-3">
+            <img src="/Portfolio/Assets/images/Python-certificate.png" alt="">
+            <h3>Python</h3>
+            <a href="/Portfolio/Assets/images/Python-certificate.png" target="_blank">view</a>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="heading">
+          <h2>CONTACT US</h2>
+        </div>
+        <div class="contact-box">
+          <div class="contact-div">
+            <div class="icon-div">
+              <i class="fa-regular fa-envelope"></i>
+              <h2>Contact Me</h2>
+              <p>I'd love to hear from you!</p>
+            </div>
+            <div class="form">
+              <form action="">
+                <div class="name">
+                  <i class="fa-regular fa-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+                <div class="email">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="message">
+                  <i class="fa-regular fa-message"></i>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button>
+                  <i class="fa-regular fa-paper-plane btn-i"></i>Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="detail">
+            <h2>GET IN TOUCH</h2>
+            <br />
+            <h3>Email:-</h3>
+            <a href="mailto:bhagwangolhar6629@gmail.com">bhagwangolhar6629@gmail.com</a><br />
+            <h3>Phone:-</h3>
+            <p>8788976629</p>
+            <br />
+            <div class="icon-box">
+              <h3>Social Media:-</h3>
+              <div class="icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/iam_chiikuu_18/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+          <!-- Footer Title -->
+          <h2>Let’s Connect!</h2>
+          <p>Thank you for visiting my portfolio. Feel free to connect with me on my professional networks!</p>
+  
+          <!-- Social Media Links -->
+          <div>
+              <a href="https://www.linkedin.com/in/bhagwan-golhar-9681b8332/" target="_blank">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/bhagwan6629" target="_blank">
+                  <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="mailto:bhagwangolhar6629@gmail.com">
+                  <i class="fas fa-envelope"></i> Email
+              </a>
+          </div>
+  
+          <!-- Location and Copyright -->
+          <p>📍 Based in [ Jalna , Maharashtra, India]</p>
+          <p>&copy; 2025 Bhagwan Golhar. All Rights Reserved.</p>
+      </div>
+  
+      <!-- Optional: Add FontAwesome for Icons -->
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </footer>
+  </body>
+  <script src="/Portfolio/app.js"></script>
+</html>
